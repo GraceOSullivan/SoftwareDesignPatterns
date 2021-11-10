@@ -1,7 +1,9 @@
 package DecoratorPattern;
 
 public class Artificial extends ChristmasTree {
-    public String getType(){
+
+    @Override
+    public String describe() {
         return "Artificial";
     }
 }

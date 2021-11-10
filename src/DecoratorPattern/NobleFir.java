@@ -1,7 +1,9 @@
 package DecoratorPattern;
 
 public class NobleFir extends ChristmasTree {
-    public String getType(){
+    @Override
+    public String describe() {
         return "Noble Fir";
     }
+
 }
