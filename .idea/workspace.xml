@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AccountDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graduate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator-SavingsAndCurrent.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator-SavingsAndCurrent.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/SavingsAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/SavingsAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CurrentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CurrentAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SavingsAccount.java" afterDir="false" />
     </list>
@@ -20,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="UML Use Case" />
         <option value="UML Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
