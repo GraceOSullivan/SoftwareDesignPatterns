@@ -10,6 +10,6 @@ public class CurrentAccount extends BankAccount {
     }
     @Override
     public String toString() {
-        return "\nAccount Type: " + TYPE + super.toString();
+        return "\nAccount Type: " + TYPE + super.toString() +"\n";
     }
 }

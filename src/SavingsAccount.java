@@ -11,6 +11,6 @@ public class SavingsAccount extends BankAccount{
 
     @Override
     public String toString() {
-        return "Account Type: "+ TYPE+super.toString();
+        return "Account Type: "+ TYPE+super.toString() + "\n";
     }
 }

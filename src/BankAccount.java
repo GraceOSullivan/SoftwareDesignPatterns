@@ -41,7 +41,7 @@ public abstract class BankAccount {
     public String toString() {
         return
                 accHolder.toString() +
-                        "\nAccoount Number: " + accNum +
+                        "\nAccount Number: " + accNum +
                         "\nBalance=" + balance;
     }
 }
