@@ -13,30 +13,6 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
-    public Person getAccHolder() {
-        return accHolder;
-    }
-
-    public void setAccHolder(Person accHolder) {
-        this.accHolder = accHolder;
-    }
-
-    public int getAccNum() {
-        return accNum;
-    }
-
-    public void setAccNum(int accNum) {
-        this.accNum = accNum;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     public String describeAccount() {
         return accHolder.toString() +  "\nAccount Number: " + accNum + "\nBalance=" + balance;
     }

@@ -1,0 +1,45 @@
+@startuml
+
+title __SRC's Class Diagram__\n
+
+
+abstract class BankAccount {
+    - accHolder: Person
+    - accNum : int
+    # balance : double
+    + BankAccount()
+    + BankAccount(Person accHolder, int accNum, double balance)
+    + describeAccount()
+}
+
+class BankApplication{
+    {static} + main()
+    }
+
+class CurrentAccount {
+    - TYPE : String
+    + CurrentAccount()
+    + CurrentAccount()
+    + describeAccount()
+}
+
+class SavingsAccount {
+    - TYPE : String
+    + SavingsAccount()
+    + SavingsAccount()
+    + describeAccount()
+}
+
+class Person {
+    - address : String
+    - name : String
+    + Person()
+    + Person()
+    + toString()
+}
+
+BankAccount o-- Person : has a
+CurrentAccount -up-|> BankAccount
+SavingsAccount -up-|> BankAccount
+
+@enduml
