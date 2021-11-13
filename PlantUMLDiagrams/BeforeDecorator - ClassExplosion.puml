@@ -1,0 +1,54 @@
+@startuml
+
+title __Bank Class Diagram__\n
+
+
+abstract class BankAccount {}
+
+class CurrentAccount {}
+
+class StudentCurrentAccount {}
+
+class GoldenYearsCurrentAccount {}
+
+class OnlineCurrentAccount {}
+
+class GraduateCurrentAccount {}
+
+class PersonalCurrentAccount {}
+
+class SavingsAccount {}
+
+class StudentSavingsAccount {}
+
+class GoldenYearsSavingsAccount {}
+
+class OnlineSavingsAccount {}
+
+class GraduateSavingsAccount {}
+
+class PersonalSavingsAccount {}
+
+class Person {
+    - address : String
+    - name : String
+    + Person(name: String, address: String)
+    + Person()
+    + toString() : String
+}
+
+BankAccount o-- Person : has a
+CurrentAccount -up-|> BankAccount
+StudentCurrentAccount -up-|> BankAccount
+GoldenYearsCurrentAccount -up-|> BankAccount
+OnlineCurrentAccount -up-|> BankAccount
+PersonalCurrentAccount -up-|> BankAccount
+GraduateCurrentAccount -up-|> BankAccount
+SavingsAccount -up-|> BankAccount
+StudentSavingsAccount -up-|> BankAccount
+GoldenYearsSavingsAccount -up-|> BankAccount
+OnlineSavingsAccount -up-|> BankAccount
+PersonalSavingsAccount -up-|> BankAccount
+GraduateSavingsAccount -up-|> BankAccount
+
+@enduml

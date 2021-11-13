@@ -1,6 +1,6 @@
 @startuml
 
-title __SRC's Class Diagram__\n
+title __Bank Class Diagram__\n
 
 
 abstract class BankAccount {
@@ -8,34 +8,28 @@ abstract class BankAccount {
     - accNum : int
     # balance : double
     + BankAccount()
-    + BankAccount(Person accHolder, int accNum, double balance)
-    + describeAccount()
+    + BankAccount(accHolder: Person, accNum: int, balance: double)
+    + describeAccount() : String
 }
-
-class BankApplication{
-    {static} + main()
-    }
 
 class CurrentAccount {
     - TYPE : String
-    + CurrentAccount()
-    + CurrentAccount()
-    + describeAccount()
+    + CurrentAccount(accHolder: Person, accNum: int, balance: double)
+    + describeAccount() : String
 }
 
 class SavingsAccount {
     - TYPE : String
-    + SavingsAccount()
-    + SavingsAccount()
-    + describeAccount()
+    + SavingsAccount(accHolder: Person, accNum: int, balance: double)
+    + describeAccount(): String
 }
 
 class Person {
     - address : String
     - name : String
+    + Person(name: String, address: String)
     + Person()
-    + Person()
-    + toString()
+    + toString() : String
 }
 
 BankAccount o-- Person : has a
