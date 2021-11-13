@@ -37,11 +37,7 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
-    @Override
-    public String toString() {
-        return
-                accHolder.toString() +
-                        "\nAccount Number: " + accNum +
-                        "\nBalance=" + balance;
+    public String describeAccount() {
+        return accHolder.toString() +  "\nAccount Number: " + accNum + "\nBalance=" + balance;
     }
 }

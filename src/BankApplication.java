@@ -6,7 +6,7 @@ public class BankApplication {
         BankAccount currentAccount = new CurrentAccount(grace, 1234, 10000.00);
         BankAccount savingsAccount = new SavingsAccount(grace, 1234, 1000.00);
 
-        System.out.println(currentAccount);
-        System.out.println(savingsAccount);
+        System.out.println(currentAccount.describeAccount());
+        System.out.println(savingsAccount.describeAccount());
     }
 }

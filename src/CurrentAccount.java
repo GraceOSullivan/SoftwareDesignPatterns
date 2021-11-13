@@ -9,7 +9,7 @@ public class CurrentAccount extends BankAccount {
         super(accHolder, accNum, balance);
     }
     @Override
-    public String toString() {
-        return "\nAccount Type: " + TYPE + super.toString() +"\n";
+    public String describeAccount() {
+        return "\nAccount Type: " + TYPE + super.describeAccount() + "\n";
     }
 }

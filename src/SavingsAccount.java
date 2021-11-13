@@ -10,7 +10,7 @@ public class SavingsAccount extends BankAccount{
     }
 
     @Override
-    public String toString() {
-        return "Account Type: "+ TYPE+super.toString() + "\n";
+    public String describeAccount() {
+        return "Account Type: "+ TYPE+super.describeAccount() + "\n";
     }
 }
