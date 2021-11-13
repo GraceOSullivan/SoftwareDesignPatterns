@@ -1,0 +1,78 @@
+@startuml
+
+title __SRC's Class Diagram__\n
+
+abstract class AccountDecorator {
+    + AccountDecorator()
+    + describeAccount()
+}
+
+abstract class BankAccount {
+    # balance : double
+    - accNum : int
+    + BankAccount()
+    + BankAccount()
+    + describeAccount()
+ }
+
+ class CurrentAccount {
+    - TYPE : String
+    + CurrentAccount()
+    + describeAccount()
+ }
+
+ class GoldenYears {
+    + GoldenYears()
+    + addGoldenYears()
+    + describeAccount()
+ }
+
+ class Graduate {
+    + Graduate()
+    + addGraduate()
+    + describeAccount()
+ }
+
+ class Online {
+    + Online()
+    + addOnline()
+    + describeAccount()
+ }
+
+ class Person {
+    - address : String
+    - name : String
+    + Person()
+    + Person()
+    + toString()
+    }
+
+ class Personal {
+    + Personal()
+    + addPersonal()
+    + describeAccount()
+ }
+
+ class SavingsAccount {
+    - TYPE : String
+    + SavingsAccount()
+    + describeAccount()
+ }
+
+ class Student {
+    + Student()
+    + addStudent()
+    + describeAccount()
+}
+
+  BankAccount o-- Person : has a
+  AccountDecorator -up-|> BankAccount
+  CurrentAccount -up-|> BankAccount
+  SavingsAccount -up-|> BankAccount
+  GoldenYears -up-|> AccountDecorator
+  Graduate -up-|> AccountDecorator
+  Online -up-|> AccountDecorator
+  Personal -up-|> AccountDecorator
+  Student -up-|> AccountDecorator
+
+@enduml
