@@ -1,6 +1,6 @@
 @startuml
 
-title __Bank Class Diagram__\n
+title __Bank Application Class Diagram__\n
 
 
 abstract class BankAccount {

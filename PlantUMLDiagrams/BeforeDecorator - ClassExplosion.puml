@@ -1,33 +1,64 @@
 @startuml
 
-title __Bank Class Diagram__\n
+title __Bank Application Class Diagram__\n
 
 
-abstract class BankAccount {}
+abstract class BankAccount {
+- accHolder: Person
+    - accNum : int
+    # balance : double
+    + BankAccount()
+    + BankAccount(accHolder: Person, accNum: int, balance: double)
+    + describeAccount() : String
+    }
 
-class CurrentAccount {}
+class CurrentAccount {
++ describeAccount(): String
+}
 
-class StudentCurrentAccount {}
+class StudentCurrentAccount {
++ describeAccount(): String
+}
 
-class GoldenYearsCurrentAccount {}
+class GoldenYearsCurrentAccount {
++ describeAccount(): String
+}
 
-class OnlineCurrentAccount {}
+class OnlineCurrentAccount {
++ describeAccount(): String
+}
 
-class GraduateCurrentAccount {}
+class GraduateCurrentAccount {
++ describeAccount(): String
+}
 
-class PersonalCurrentAccount {}
+class PersonalCurrentAccount {
++ describeAccount(): String
+}
 
-class SavingsAccount {}
+class SavingsAccount {
++ describeAccount(): String
+}
 
-class StudentSavingsAccount {}
+class StudentSavingsAccount {
++ describeAccount(): String
+}
 
-class GoldenYearsSavingsAccount {}
+class GoldenYearsSavingsAccount {
++ describeAccount(): String
+}
 
-class OnlineSavingsAccount {}
+class OnlineSavingsAccount {
++ describeAccount(): String
+}
 
-class GraduateSavingsAccount {}
+class GraduateSavingsAccount {
++ describeAccount(): String
+}
 
-class PersonalSavingsAccount {}
+class PersonalSavingsAccount {
++ describeAccount(): String
+}
 
 class Person {
     - address : String
@@ -38,16 +69,16 @@ class Person {
 }
 
 BankAccount o-- Person : has a
-CurrentAccount -up-|> BankAccount
-StudentCurrentAccount -up-|> BankAccount
-GoldenYearsCurrentAccount -up-|> BankAccount
-OnlineCurrentAccount -up-|> BankAccount
+CurrentAccount -down-|> BankAccount
+StudentCurrentAccount -down-|> BankAccount
+GoldenYearsCurrentAccount -right-|> BankAccount
+OnlineCurrentAccount -right-|> BankAccount
 PersonalCurrentAccount -up-|> BankAccount
 GraduateCurrentAccount -up-|> BankAccount
-SavingsAccount -up-|> BankAccount
-StudentSavingsAccount -up-|> BankAccount
-GoldenYearsSavingsAccount -up-|> BankAccount
-OnlineSavingsAccount -up-|> BankAccount
+SavingsAccount -down-|> BankAccount
+StudentSavingsAccount -down-|> BankAccount
+GoldenYearsSavingsAccount -left-|> BankAccount
+OnlineSavingsAccount -left-|> BankAccount
 PersonalSavingsAccount -up-|> BankAccount
 GraduateSavingsAccount -up-|> BankAccount
 

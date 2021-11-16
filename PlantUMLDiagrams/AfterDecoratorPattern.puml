@@ -1,71 +1,75 @@
 @startuml
 
-title __SRC's Class Diagram__\n
+title __Bank Application Class Diagram__\n
 
 abstract class AccountDecorator {
-    + AccountDecorator()
-    + describeAccount()
+    + AccountDecorator(account: BankAccount)
+    + describeAccount(): String
 }
 
 abstract class BankAccount {
     # balance : double
     - accNum : int
     + BankAccount()
-    + BankAccount()
-    + describeAccount()
+    + BankAccount(accHolder: Person,
+    accNum: int, balance: double)
+    + describeAccount() : String
  }
 
  class CurrentAccount {
     - TYPE : String
-    + CurrentAccount()
-    + describeAccount()
+    + CurrentAccount(accHolder: Person,
+    accNum: int, balance: double)
+    + describeAccount() : String
  }
 
  class GoldenYears {
-    + GoldenYears()
-    + addGoldenYears()
-    + describeAccount()
+    + GoldenYears(account: BankAccount)
+    + addGoldenYears(): String
+    + describeAccount(): String
  }
 
  class Graduate {
-    + Graduate()
-    + addGraduate()
-    + describeAccount()
+    + Graduate(account: BankAccount)
+    + addGraduate(): String
+    + describeAccount(): String
  }
 
  class Online {
-    + Online()
-    + addOnline()
-    + describeAccount()
+    + Online(account: BankAccount)
+    + addOnline(): String
+    + describeAccount(): String
  }
 
  class Person {
     - address : String
     - name : String
+    + Person(name: String, address: String)
     + Person()
-    + Person()
-    + toString()
-    }
+    + toString() : String
+ }
 
  class Personal {
-    + Personal()
-    + addPersonal()
-    + describeAccount()
+    + Personal(account: BankAccount)
+    + addPersonal(): String
+    + describeAccount(): String
  }
 
  class SavingsAccount {
     - TYPE : String
-    + SavingsAccount()
-    + describeAccount()
+    + SavingsAccount(accHolder: Person,
+    accNum: int, balance: double)
+    + describeAccount(): String
  }
 
  class Student {
-    + Student()
-    + addStudent()
-    + describeAccount()
+    + Student(account: BankAccount)
+    + addStudent(): String
+    + describeAccount(): String
 }
 
-  BankAccount o-- Person : has a
+  BankAccount o-right- Person : has a
+  BankAccount <-- AccountDecorator : component\t\t\t
   AccountDecorator -up-|> BankAccount
   CurrentAccount -up-|> BankAccount
   SavingsAccount -up-|> BankAccount
