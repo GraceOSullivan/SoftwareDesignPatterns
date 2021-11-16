@@ -9,7 +9,8 @@ abstract class BankAccount {
     # balance : double
     + BankAccount()
     + BankAccount(accHolder: Person, accNum: int, balance: double)
-    + describeAccount() : String
+    + toString() : String
+    {abstract} + describeAccount() : String
     }
 
 class CurrentAccount {

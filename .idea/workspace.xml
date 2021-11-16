@@ -6,9 +6,10 @@
       <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/AfterDecoratorPattern.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/AfterDecoratorPattern.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator - ClassExplosion.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator - ClassExplosion.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator-SavingsAndCurrent.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/BeforeDecorator-SavingsAndCurrent.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CurrentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CurrentAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SavingsAccount.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

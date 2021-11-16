@@ -8,12 +8,14 @@ abstract class AccountDecorator {
 }
 
 abstract class BankAccount {
+    - accHolder: Person
     # balance : double
     - accNum : int
     + BankAccount()
     + BankAccount(accHolder: Person,
     accNum: int, balance: double)
-    + describeAccount() : String
+    + toString() : String
+    {abstract} + describeAccount() : String
  }
 
  class CurrentAccount {
