@@ -1,4 +1,6 @@
 @startuml
+skinparam classAttributeIconSize 0
+
 
 title __Bank Application Class Diagram__\n
 
@@ -69,7 +71,7 @@ class Person {
     + toString() : String
 }
 
-BankAccount o-- Person : has a
+BankAccount --o Person : has a
 CurrentAccount -down-|> BankAccount
 StudentCurrentAccount -down-|> BankAccount
 GoldenYearsCurrentAccount -right-|> BankAccount

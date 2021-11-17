@@ -1,4 +1,6 @@
 @startuml
+skinparam classAttributeIconSize 0
+
 
 title __Bank Application Class Diagram__\n
 
@@ -70,7 +72,7 @@ abstract class BankAccount {
     + describeAccount(): String
 }
 
-  BankAccount o-right- Person : has a
+  BankAccount -right-o Person : has a
   BankAccount <-- AccountDecorator : component\t\t\t
   AccountDecorator -up-|> BankAccount
   CurrentAccount -up-|> BankAccount
