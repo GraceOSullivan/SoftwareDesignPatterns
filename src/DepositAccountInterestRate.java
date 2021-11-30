@@ -1,5 +1,7 @@
 public class DepositAccountInterestRate implements InterestRate{
-        public double calculateInterestRate(BankAccount bankAccount){
-            return bankAccount.balance * 0.031;
-        }
+    double depositAccountInterestRate = 0.031;
+
+    public double calculateInterestRate(BankAccount bankAccount){
+        return bankAccount.balance * depositAccountInterestRate;
+    }
 }
