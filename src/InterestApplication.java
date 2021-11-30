@@ -5,9 +5,10 @@ public class InterestApplication {
 
         BankAccount currentAccount = new CurrentAccount(grace, 6822, 100.00);
         InterestRate currentAccountInterestRate = new InterestRate();
+        System.out.println(currentAccountInterestRate.calculateInterestRate(currentAccount) + "%");
 
-        double calculatedRate = currentAccountInterestRate.calculateCurrentAccountInterestRate(currentAccount, currentAccount.balance);
-
-        System.out.println(calculatedRate);
+        BankAccount savingsAccount = new SavingsAccount(grace, 6822, 100.00);
+        InterestRate savingsAccountInterestRate = new InterestRate();
+        System.out.println(savingsAccountInterestRate.calculateInterestRate(savingsAccount) + "%");
     }
 }

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/Strategy/StrategyBefore.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/Strategy/BeforeStrategy - ChangeImplemented.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DepositAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/Strategy/StrategyBefore.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/Strategy/BeforeStrategy - ConcreteClass.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/CurrentAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestRate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/SavingsAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/SavingsAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InterestRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterestRate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

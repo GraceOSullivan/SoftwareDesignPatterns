@@ -11,7 +11,6 @@ abstract class BankAccount {
     + BankAccount()
     + BankAccount(accHolder: Person,
     accNum: int, balance: double)
-    + getInterestRate(InterestRate interestRate): void
     + toString() : String
     {abstract} + describeAccount() : String
  }
@@ -39,12 +38,11 @@ abstract class BankAccount {
  }
 
 class InterestRate {
-   + calculateCurrentAccountInterestRate(double accountBalance): double
-   + calculateSavingsAccountInterestRate(double accountBalance): double
+   + calculateInterestRate(BankAccount bankAccount): double
 }
 
   BankAccount -right-o Person : has a
-  InterestRate -right-o BankAccount : has a
+  InterestRate -right-o BankAccount : has an
   CurrentAccount -up-|> BankAccount
   SavingsAccount -up-|> BankAccount
 
