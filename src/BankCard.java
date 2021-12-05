@@ -16,9 +16,12 @@ public class BankCard {
         this.csv = csv;
     }
 
-    static BankCard getInstance(CardType cardType){
+    static synchronized BankCard getInstance(CardType cardType){
         if(bankCard == null){
-            bankCard = new BankCard(cardType, BankCard.getCardNumber(), BankCard.getExpirationDate(), BankCard.getCsv());
+            synchronized (BankCard.class){
+                if(bankCard == null)
+                    bankCard = new BankCard(cardType, BankCard.getCardNumber(), BankCard.getExpirationDate(), BankCard.getCsv());
+            }
         }
         return bankCard;
     }

@@ -70,6 +70,6 @@ enum CardType {
   CurrentAccount -up-|> BankAccount
   SavingsAccount -up-|> BankAccount
   DepositAccount -up-|> BankAccount
-  BankCard "1" --> " 1" BankCard: instance
+  BankCard "1" -up-> "1" BankCard: instance
 
 @enduml
