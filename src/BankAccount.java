@@ -2,7 +2,7 @@ public abstract class BankAccount {
     private Person accHolder;
     private int accNum;
     protected double balance;
-    private static BankCard bankCard; //When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object.
+    private static BankCard bankCard; //static so can be accessed before BankCard object created and without reference to any object.
 
     public BankAccount() {
         this(new Person(),0,0, bankCard);

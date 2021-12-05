@@ -16,31 +16,27 @@ public class BankCard {
         this.csv = csv;
     }
 
-    public static BankCard getInstance(CardType cardType){
+    static BankCard getInstance(CardType cardType){
         if(bankCard == null){
             bankCard = new BankCard(cardType, BankCard.getCardNumber(), BankCard.getExpirationDate(), BankCard.getCsv());
         }
         return bankCard;
     }
 
-    public static long getCardNumber() {
+    private static long getCardNumber() {
         Random rnd = new Random();
         long longNum = rnd.nextLong();
 
         return Long.parseLong(String.format("%10d", longNum));
     }
 
-    public static CardType getCardType(CardType cardType) {
-        return cardType;
-    }
-
-    public static Date getExpirationDate() {
+    private static Date getExpirationDate() {
         Calendar date = Calendar.getInstance();
         date.add(Calendar.YEAR, 3);
         return new Date(date.getTimeInMillis());
     }
 
-    public static int getCsv() {
+    private static int getCsv() {
         Random rnd = new Random();
         int number = rnd.nextInt(999);
         return Integer.parseInt(String.format("%03d", number));
