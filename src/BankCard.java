@@ -1,26 +1,48 @@
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 
 public class BankCard {
     private static BankCard bankCard;
-    private BankAccount account;
     private CardType cardType;
-    private int cardNumber;
+    private long cardNumber;
     private Date expirationDate;
     private int csv;
 
-    private BankCard(BankAccount account, CardType cardType, int cardNumber, Date expirationDate, int csv){
-        this.account = account;
+    private BankCard(CardType cardType, long cardNumber, Date expirationDate, int csv){
         this.cardType = cardType;
         this.cardNumber = cardNumber;
         this.expirationDate = expirationDate;
         this.csv = csv;
     }
 
-
-    public static BankCard getInstance(BankAccount account, CardType cardType, int cardNumber, Date expirationDate, int csv){
+    public static BankCard getInstance(CardType cardType){
         if(bankCard == null){
-            bankCard = new BankCard(account, cardType, cardNumber, expirationDate, csv);
+            bankCard = new BankCard(cardType, BankCard.getCardNumber(), BankCard.getExpirationDate(), BankCard.getCsv());
         }
         return bankCard;
+    }
+
+    public static long getCardNumber() {
+        Random rnd = new Random();
+        long longNum = rnd.nextLong();
+
+        return Long.parseLong(String.format("%10d", longNum));
+    }
+
+    public static CardType getCardType(CardType cardType) {
+        return cardType;
+    }
+
+    public static Date getExpirationDate() {
+        Calendar date = Calendar.getInstance();
+        date.add(Calendar.YEAR, 3);
+        return new Date(date.getTimeInMillis());
+    }
+
+    public static int getCsv() {
+        Random rnd = new Random();
+        int number = rnd.nextInt(999);
+        return Integer.parseInt(String.format("%03d", number));
     }
 }

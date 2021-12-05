@@ -1,8 +1,8 @@
 public class SavingsAccount extends BankAccount{
     private final String TYPE="Savings";
 
-    public SavingsAccount(Person accHolder, int accNum, double balance) {
-        super(accHolder, accNum, balance);
+    public SavingsAccount(Person accHolder, int accNum, double balance, BankCard bankCard) {
+        super(accHolder, accNum, balance, bankCard);
     }
 
     @Override
