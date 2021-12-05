@@ -66,9 +66,10 @@ enum CardType {
 
   BankAccount -right-o Person : has a
   BankAccount o-right- BankCard : has a
-  BankCard o-right- CardType : has a
+  BankCard o-down- CardType : has a
   CurrentAccount -up-|> BankAccount
   SavingsAccount -up-|> BankAccount
   DepositAccount -up-|> BankAccount
+  BankCard "1" --> " 1" BankCard: instance
 
 @enduml
