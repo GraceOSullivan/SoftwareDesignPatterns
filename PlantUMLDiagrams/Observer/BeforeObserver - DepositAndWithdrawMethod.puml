@@ -31,7 +31,9 @@ abstract class BankAccount {
     - address : String
     - name : String
     - phoneNum : long
-    + Person(name: String, address: String)
+    - email : String
+    + Person(name: String, address: String,
+    phoneNum: long, email: String)
     + Person()
     + toString() : String
  }

@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EmailObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SMSObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/Observer/BeforeObserver - DepositAndWithdrawMethod.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/Observer/BeforeObserver - DepositAndWithdrawMethod.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/InterestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +23,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SoftwareDesignPatterns" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Use Case" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="UML Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,8 +102,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BankApplication" />
-        <item itemvalue="Application.BankCard" />
         <item itemvalue="Application.InterestApplication" />
+        <item itemvalue="Application.BankCard" />
         <item itemvalue="Application.BankingApplication" />
       </list>
     </recent_temporary>
