@@ -15,6 +15,33 @@ public abstract class BankAccount {
         this.bankCard = bankCard;
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void deposit(double amountDeposited){
+        if(amountDeposited > 0){
+            double balance = getBalance();
+            balance += amountDeposited;
+            setBalance(balance);
+        }else
+            System.out.println("Amount to deposit must be greater than 0");
+    }
+
+    public void withdraw(double amountWithdrawn){
+        if(amountWithdrawn > 0){
+            double balance = getBalance();
+            balance -= amountWithdrawn;
+            setBalance(balance);
+        }else
+            System.out.println("Amount to withdraw must be greater than 0");
+    }
+
+
     @Override
     public String toString() {
         return accHolder.toString() +  "\nAccount Number: " + accNum + "\nBalance=" + balance;
