@@ -11,14 +11,14 @@ public class BankApplication {
 
         //Current, Student, Online Account
         BankAccount currentStudentOnlineAccount = new Online(new Student(new CurrentAccount(grace, accountNum, balance, debit)));
+        currentStudentOnlineAccount.setBalance(balance);
 
         //Savings, Personal, Graduate Account
         BankAccount savingsPersonalGraduateAccount = new Graduate(new Personal(new SavingsAccount(grace, accountNum, balance, credit)));
+        savingsPersonalGraduateAccount.setBalance(balance);
 
-        //System.out.println(currentStudentOnlineAccount.describeAccount());
-        //System.out.println(savingsPersonalGraduateAccount.describeAccount());
-
-        System.out.println(savingsPersonalGraduateAccount.getBalance());
+        System.out.println(currentStudentOnlineAccount.describeAccount());
+        System.out.println(savingsPersonalGraduateAccount.describeAccount());
 
     }
 }
