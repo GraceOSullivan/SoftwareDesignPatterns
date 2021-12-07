@@ -5,7 +5,7 @@ public abstract class BankAccount implements Subject{
     private int accNum;
     protected double balance;
     private static BankCard bankCard; //static so can be accessed before BankCard object created and without reference to any object.
-    private ArrayList observers;
+    private ArrayList<Observer> observers;
 
     public BankAccount() {
         this(new Person(),0,0, bankCard);
