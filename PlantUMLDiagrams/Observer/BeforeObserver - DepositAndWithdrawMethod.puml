@@ -1,0 +1,80 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+title __Bank Application Class Diagram__\n
+
+abstract class BankAccount {
+    - accHolder: Person
+    # balance : double
+    - accNum : int
+    - {static} bankCard : BankCard
+    + BankAccount()
+    + BankAccount(accHolder: Person, accNum: int,
+    balance: double, bankCard: BankCard)
+    + getBalance(): double
+    + setBalance(balance: double): void
+    + deposit(amountDeposited: double): void
+    + withdraw(amountWithdrawn: double): void
+    + toString() : String
+    {abstract} + describeAccount() : String
+ }
+
+ class CurrentAccount {
+    - TYPE : String
+    + CurrentAccount(accHolder: Person, accNum: int,
+    balance: double, bankCard: BankCard)
+    + describeAccount() : String
+ }
+
+ class Person {
+    - address : String
+    - name : String
+    - phoneNum : long
+    + Person(name: String, address: String)
+    + Person()
+    + toString() : String
+ }
+
+ class SavingsAccount {
+    - TYPE : String
+    + SavingsAccount(accHolder: Person, accNum: int,
+    balance: double, bankCard: BankCard)
+    + describeAccount(): String
+ }
+
+ class DepositAccount {
+    - TYPE : String
+    + DepositAccount(accHolder: Person, accNum: int,
+    balance: double, bankCard: BankCard)
+    + describeAccount(): String
+ }
+
+ class BankCard {
+     - {static} bankCard: BankCard
+     - cardType: CardType;
+     - cardNumber: long;
+     - expirationDate: Date;
+     - csv: int;
+     - BankCard(cardType: CardType, cardNumber: long,
+     expirationDate: Date, csv: int)
+     ~ {static} getInstance(cardType: CardType): BankCard
+     - {static} getCardNumber(): long
+     - {static} getExpirationDate(): Date
+     - {static} getCsv(): int
+ }
+
+enum CardType {
+  DEBIT
+  CREDIT
+}
+
+  BankAccount -right-o Person : has a
+  BankAccount o-right- BankCard : has a
+  BankCard o-down- CardType : has a
+  CurrentAccount -up-|> BankAccount
+  SavingsAccount -up-|> BankAccount
+  DepositAccount -up-|> BankAccount
+  BankCard "1" -up-> "1" BankCard: instance
+
+@enduml

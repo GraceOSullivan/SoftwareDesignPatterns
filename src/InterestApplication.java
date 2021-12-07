@@ -1,7 +1,7 @@
 public class InterestApplication {
     public static void main(String[] args) {
 
-        Person grace = new Person("Grace", "Killarney");
+        Person grace = new Person("Grace", "Killarney", 353831234567L);
 
         BankAccount currentAccount = new CurrentAccount(grace, 6822, 100.00, BankCard.getInstance(CardType.CREDIT));
         InterestRate currentAccountInterestRate = new CurrentAccountInterestRate();
