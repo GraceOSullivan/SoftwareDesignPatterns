@@ -9,7 +9,7 @@ public class Student extends AccountDecorator {
         return super.describeAccount() + addStudent();
     }
 
-    public String addStudent(){
+    private String addStudent(){
         return ", Student";
     }
 }
