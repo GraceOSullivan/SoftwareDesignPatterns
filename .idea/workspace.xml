@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/Factory/BeforeFactory - BankStatement.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BankApplication">
+  <component name="RunManager" selected="Application.BankStatement">
     <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BankApplication" />
       <module name="SoftwareDesignPatterns" />
@@ -72,6 +71,13 @@
     </configuration>
     <configuration name="BankCard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BankCard" />
+      <module name="SoftwareDesignPatterns" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankStatement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankStatement" />
       <module name="SoftwareDesignPatterns" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankStatement" />
         <item itemvalue="Application.BankApplication" />
         <item itemvalue="Application.InterestApplication" />
         <item itemvalue="Application.BankCard" />

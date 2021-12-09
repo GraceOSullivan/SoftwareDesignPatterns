@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public abstract class BankAccount implements Subject{
     private Person accHolder;
@@ -6,6 +7,7 @@ public abstract class BankAccount implements Subject{
     protected double balance;
     private static BankCard bankCard; //static so can be accessed before BankCard object created and without reference to any object.
     private ArrayList<Observer> observers;
+    private ArrayList<String> transactions = new ArrayList<>();
 
     public BankAccount() {
         this(new Person(),0,0, bankCard);
@@ -33,6 +35,8 @@ public abstract class BankAccount implements Subject{
             balance += amountDeposited;
             setBalance(balance);
             notifyObservers();
+            Date date = new Date();
+            transactions.add(date + "\t + €" + amountDeposited);
         }else
             System.out.println("Amount to deposit must be greater than 0");
     }
@@ -43,6 +47,8 @@ public abstract class BankAccount implements Subject{
             balance -= amountWithdrawn;
             setBalance(balance);
             notifyObservers();
+            Date date = new Date();
+            transactions.add(date + "\t - €" + amountWithdrawn);
         }else
             System.out.println("Amount to withdraw must be greater than balance");
     }
@@ -63,6 +69,18 @@ public abstract class BankAccount implements Subject{
             Observer observer = (Observer)observers.get(i);
             observer.update(balance);
         }
+    }
+
+    ArrayList getTransactions(){
+        return transactions;
+    }
+
+    int getAccNum(){
+        return accNum;
+    }
+
+    void setAccNum(int accNum){
+        this.accNum = accNum;
     }
 
     @Override
