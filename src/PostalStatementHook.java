@@ -20,7 +20,7 @@ public class PostalStatementHook extends BankStatementHook {
         }
     }
     private String askAccountHolder() {
-        String ans = null;
+        String ans = "";
         System.out.print("Do you want to see your balance at the end of your statement? (y/n)? ");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         try {
@@ -28,7 +28,7 @@ public class PostalStatementHook extends BankStatementHook {
         } catch (IOException ioe) {
             System.err.println("IO error trying to read your answer");
         }
-        if (ans == null) {
+        if (ans == "") {
             return "no";
         }
         return ans;

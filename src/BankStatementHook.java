@@ -9,9 +9,8 @@ public abstract class BankStatementHook {
         addTransactionsToStatement();
         if(accountHolderWantsBalance())
             viewBalance(account);
-        else
-            printStatement();
-            send();
+        printStatement();
+        send();
     }
 
     public abstract void send();
@@ -33,7 +32,7 @@ public abstract class BankStatementHook {
     }
 
     //HOOK
-    private boolean accountHolderWantsBalance(){
+    boolean accountHolderWantsBalance(){
         return true;
     }
 }
