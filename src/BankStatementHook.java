@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public abstract class BankStatementHook {
     private ArrayList<String> transactions;
-    public String statement;
+    String statement = "";
 
-    public final void createBankStatement(BankAccount account){
+    final void createBankStatement(BankAccount account){
         getAllAccountTransactions(account);
         addTransactionsToStatement();
         if(accountHolderWantsBalance())

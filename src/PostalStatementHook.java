@@ -13,11 +13,7 @@ public class PostalStatementHook extends BankStatementHook {
 
     public boolean accountHolderWantsBalance() {
         String ans = askAccountHolder();
-        if (ans.toLowerCase().startsWith("y")) {
-            return true;
-        } else {
-            return false;
-        }
+        return ans.toLowerCase().startsWith("y");
     }
     private String askAccountHolder() {
         String ans = "";
@@ -28,7 +24,7 @@ public class PostalStatementHook extends BankStatementHook {
         } catch (IOException ioe) {
             System.err.println("IO error trying to read your answer");
         }
-        if (ans == "") {
+        if (ans.equals("")) {
             return "no";
         }
         return ans;
