@@ -24,29 +24,27 @@ abstract class BankAccount {
     {abstract} + describeAccount() : String
  }
 
- class PostalStatement {
+ abstract class BankStatement {
     - transactions : ArrayList<String>
     - statement : String
-    + createBankStatement(account: BankAccount): void
+    <<final>> + createBankStatement(account: BankAccount): void
+    {abstract} + send():void
     - getAllAccountTransactions(account: BankAccount): void
     - addTransactionsToStatement(): void
     + addAccountBalanceToStatement(account: BankAccount): void
     - printStatement(): void
-    - sendInPost(): void
+ }
+
+ class PostalStatement {
+    + send(): void
  }
 
  class OnlineStatement {
-    - transactions : ArrayList<String>
-    - statement : String
-    + createBankStatement(account: BankAccount): void
-    - getAllAccountTransactions(account: BankAccount): void
-    - addTransactionsToStatement(): void
-    + addAccountBalanceToStatement(account: BankAccount): void
-    - printStatement(): void
-    - sendOnline(): void
+    + send(): void
  }
 
-  BankAccount *-- PostalStatement : gets
-  BankAccount *-- OnlineStatement : gets
+  BankAccount *-left- BankStatement : gets
+  PostalStatement -up-|> BankStatement
+  OnlineStatement -up-|> BankStatement
 
 @enduml

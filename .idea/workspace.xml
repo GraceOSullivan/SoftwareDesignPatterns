@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/AfterTemplateMethodApplied.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/Solution - Before createStatement() is abstracted.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StatementApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OnlineStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OnlineStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PostalStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostalStatement.java" afterDir="false" />
     </list>
@@ -12,6 +16,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="77" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="SoftwareDesignPatterns" />
@@ -22,8 +29,8 @@
         <option value="UML Use Case" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="UML Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,10 +42,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DecoratorPattern" />
+    <property name="ToolWindowCoverage.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Grace O'Sullivan\IdeaProjects\SoftwareDesignPatterns\PlantUMLDiagrams\TemplateMethod" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -60,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PostalStatement">
+  <component name="RunManager" selected="Application.StatementApplication">
     <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BankApplication" />
       <module name="SoftwareDesignPatterns" />
@@ -98,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PostalStatement" />
         <item itemvalue="Application.StatementApplication" />
+        <item itemvalue="Application.PostalStatement" />
         <item itemvalue="Application.StatementFactory" />
         <item itemvalue="Application.BankStatementClass" />
         <item itemvalue="Application.BankApplication" />
@@ -143,5 +154,8 @@
         <watch expression="factory" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareDesignPatterns$PostalStatement.ic" NAME="PostalStatement Coverage Results" MODIFIED="1639495416879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
