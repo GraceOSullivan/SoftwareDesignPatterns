@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/AfterTemplateMethodApplied.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/Solution - Before createStatement() is abstracted.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BankStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StatementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankStatementHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PostalStatementHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OnlineStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OnlineStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PostalStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostalStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankStatement.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,16 +68,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StatementApplication">
-    <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BankApplication" />
+  <component name="RunManager" selected="Application.HookTest">
+    <configuration name="BankStatementClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankStatementClass" />
       <module name="SoftwareDesignPatterns" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BankStatementClass" />
+    <configuration name="HookTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HookTest" />
       <module name="SoftwareDesignPatterns" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HookTest" />
         <item itemvalue="Application.StatementApplication" />
         <item itemvalue="Application.PostalStatement" />
         <item itemvalue="Application.StatementFactory" />
         <item itemvalue="Application.BankStatementClass" />
-        <item itemvalue="Application.BankApplication" />
       </list>
     </recent_temporary>
   </component>

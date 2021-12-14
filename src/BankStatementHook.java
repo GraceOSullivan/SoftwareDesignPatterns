@@ -1,18 +1,21 @@
 import java.util.ArrayList;
 
-public abstract class BankStatement {
+public abstract class BankStatementHook {
     private ArrayList<String> transactions;
-    private String statement;
+    public String statement;
 
-    final void createBankStatement(BankAccount account){
+    public final void createBankStatement(BankAccount account){
         getAllAccountTransactions(account);
         addTransactionsToStatement();
-        addAccountBalanceToStatement(account);
-        printStatement();
-        send();
+        if(accountHolderWantsBalance())
+            viewBalance(account);
+        else
+            printStatement();
+            send();
     }
 
-   public abstract void send();
+    public abstract void send();
+    public abstract void viewBalance(BankAccount account);
 
     private void getAllAccountTransactions(BankAccount account){
         transactions = account.getTransactions();
@@ -24,12 +27,13 @@ public abstract class BankStatement {
         }
     }
 
-    private void addAccountBalanceToStatement(BankAccount account){
-        statement += "\nBalance: €" + account.getBalance();
-    }
-
     private void printStatement(){
         System.out.println("BANK STATEMENT:");
         System.out.println(statement);
+    }
+
+    //HOOK
+    private boolean accountHolderWantsBalance(){
+        return true;
     }
 }
