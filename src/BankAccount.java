@@ -71,6 +71,10 @@ public abstract class BankAccount implements Subject{
         }
     }
 
+    public ArrayList getTransactions(){
+        return transactions;
+    }
+
     @Override
     public String toString() {
         return accHolder.toString() +  "\nAccount Number: " + accNum + "\nBalance=" + balance;
