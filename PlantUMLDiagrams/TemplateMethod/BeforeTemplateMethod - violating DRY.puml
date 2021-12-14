@@ -1,0 +1,58 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+title __Bank Application Class Diagram__\n
+
+abstract class BankAccount {
+    - accHolder: Person
+    # balance : double
+    - accNum : int
+    - {static} bankCard : BankCard
+    - observers : ArrayList<Observer>
+    + BankAccount()
+    + BankAccount(accHolder: Person, accNum: int,
+    balance: double, bankCard: BankCard)
+    + getBalance(): double
+    + setBalance(balance: double): void
+    + deposit(amountDeposited: double): void
+    + withdraw(amountWithdrawn: double): void
+    + registerObserver(observer: Observer):void
+    + removeObserver(observer: Observer):void
+    + notifyObservers():void
+    + toString() : String
+    {abstract} + describeAccount() : String
+ }
+
+ class PostalStatement {
+    - transactions : ArrayList<String>
+    - statement : String
+    + createBankStatement(account: BankAccount): void
+    - getAllAccountTransactions(account: BankAccount): void
+    - addTransactionsToStatement(): void
+    + addAccountBalanceToStatement(account: BankAccount): void
+    - printStatement(): void
+    - sendInPost(): void
+ }
+
+ class OnlineStatement {
+    - transactions : ArrayList<String>
+    - statement : String
+    + createBankStatement(account: BankAccount): void
+    - getAllAccountTransactions(account: BankAccount): void
+    - addTransactionsToStatement(): void
+    + addAccountBalanceToStatement(account: BankAccount): void
+    - printStatement(): void
+    - sendOnline(): void
+ }
+
+  BankAccount *-- PostalStatement : gets
+  BankAccount *-- OnlineStatement : gets
+'  BankAccount o-right- BankCard : has a
+'  BankCard o-down- CardType : has a
+'  CurrentAccount -up-|> BankAccount
+'  SavingsAccount -up-|> BankAccount
+'  DepositAccount -up-|> BankAccount
+'  BankCard "1" -up-> "1" BankCard: instance
+
+@enduml

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class PostalStatement {
-    ArrayList<String> transactions;
-    String statement = "";
+    private ArrayList<String> transactions;
+    private String statement = "";
 
-    void createBankStatement(BankAccount account){
+    public void createBankStatement(BankAccount account){
         getAllAccountTransactions(account);
         addTransactionsToStatement();
         addAccountBalanceToStatement(account);

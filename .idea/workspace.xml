@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f809b17-ae3f-4773-8abe-ec9b8dcdc373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OnlineStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostalStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlantUMLDiagrams/TemplateMethod/BeforeTemplateMethod - violating DRY.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareDesignPatterns/BankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OnlineStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OnlineStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PostalStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostalStatement.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +21,9 @@
       <list>
         <option value="UML Use Case" />
         <option value="Enum" />
-        <option value="UML Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
