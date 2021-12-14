@@ -71,18 +71,6 @@ public abstract class BankAccount implements Subject{
         }
     }
 
-    ArrayList getTransactions(){
-        return transactions;
-    }
-
-    int getAccNum(){
-        return accNum;
-    }
-
-    void setAccNum(int accNum){
-        this.accNum = accNum;
-    }
-
     @Override
     public String toString() {
         return accHolder.toString() +  "\nAccount Number: " + accNum + "\nBalance=" + balance;

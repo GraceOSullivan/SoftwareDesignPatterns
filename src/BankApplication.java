@@ -14,6 +14,5 @@ public class BankApplication {
 
         currentStudentOnlineAccount.deposit(10000);
         currentStudentOnlineAccount.withdraw(100);
-
     }
 }
