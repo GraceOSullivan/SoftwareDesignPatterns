@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public abstract class BankStatement {
     private ArrayList<String> transactions;
-    private String statement;
+    private String statement = "";
 
     final void createBankStatement(BankAccount account){
         getAllAccountTransactions(account);
